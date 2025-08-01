@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Diego - Diseñador Digital</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <section class="header">
+        <div class="profile-container">
+            <div class="profile-image">JD</div>
+            <h1>Juan Diego</h1>
+            <p class="subtitle">Diseñador Digital & Desarrollador</p>
+            <p class="description">
+                Estudiante de Análisis y Desarrollo de Software con experiencia en programación y diseño. 
+                Especializado en crear contenido visual impactante para redes sociales, restaurantes, mariachis, bares y más.
+            </p>
+            <a href="https://wa.me/573172709065" class="cta-button" target="_blank">
+                <span>💬</span> ¡Contactar por WhatsApp!
+            </a>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="section">
+        <h2 class="section-title">Mis Habilidades</h2>
+        <p class="section-subtitle">Combinando creatividad y tecnología para crear experiencias únicas</p>
+        
+        <div class="skills-grid">
+            <div class="skill-card">
+                <span class="skill-icon">🎨</span>
+                <h3>Diseño Gráfico</h3>
+                <p>Creación de diseños visuales impactantes para redes sociales, publicidad y branding. Especializado en contenido para historias de Instagram y Facebook.</p>
+            </div>
+            
+            <div class="skill-card">
+                <span class="skill-icon">🎬</span>
+                <h3>Edición de Video</h3>
+                <p>Producción y edición de videos promocionales, contenido para redes sociales y material audiovisual para diferentes tipos de negocios.</p>
+            </div>
+            
+            <div class="skill-card">
+                <span class="skill-icon">💻</span>
+                <h3>Desarrollo Web</h3>
+                <p>Experiencia en programación y desarrollo de soluciones digitales. Creando interfaces modernas y funcionales.</p>
+            </div>
+        </div>
+
+        <div class="tools-list">
+            <span class="tool-tag">Photoshop</span>
+            <span class="tool-tag">Canva</span>
+            <span class="tool-tag">Filmora</span>
+            <span class="tool-tag">CapCut</span>
+        </div>
+    </section>
+
+    <!-- Portafolio -->
+    <section class="section">
+        <h2 class="section-title">Mi Trabajo</h2>
+        <p class="section-subtitle">Diseños para mariachis, restaurantes, bares y más</p>
+        
+        <div class="gallery-container">
+            <div class="gallery-nav">
+                <button class="gallery-btn active" data-category="all">Todo</button>
+                <button class="gallery-btn" data-category="images">Imágenes</button>
+                <button class="gallery-btn" data-category="videos">Videos</button>
+            </div>
+            
+            <div class="gallery-grid" id="gallery">
+                <!-- Placeholders para imágenes -->
+                <div class="gallery-item" data-category="images">
+                    <img src="./images/foto-1.png" alt="Imagen 1">
+                </div>
+                
+                <div class="gallery-item" data-category="images">
+                    <img src="./images/foto-2.png" alt="Imagen 2">
+                </div>
+                
+                <div class="gallery-item" data-category="images">
+                    <img src="./images/foto-3.png" alt="Imagen 3">
+                </div>
+                
+                <div class="gallery-item" data-category="images">
+                    <img src="./images/foto-4.png" alt="Imagen 4">
+                </div>
+                
+                <div class="gallery-item" data-category="images">
+                    <img src="./images/foto-5.jpg" alt="Imagen 5">
+                </div>
+                
+                <div class="gallery-item" data-category="images">
+                    <img src="./images/foto-6.jpg" alt="Imagen 6">
+                </div>
+                
+                <div class="gallery-item" data-category="videos">
+                    <video src="./videos/Video 4 de Julio 2025 - Sazon de la China.mp4" controls></video>
+                </div>
+                
+                <div class="gallery-item" data-category="videos">
+                    <video src="./videos/Video actuado.mp4" controls></video>
+                </div>
+                
+                <div class="gallery-item" data-category="videos">
+                    <video src="./videos/Video año nuevo - la hueca.mp4" controls></video>
+                </div>
+                
+                <div class="gallery-item" data-category="videos">
+                    <video src="./videos/Video de fotos cruzadas.mp4" controls></video>
+                </div>
+                
+                <div class="gallery-item" data-category="videos">
+                    <video src="./videos/Video dia de la madre con musica.mp4" controls></video>
+                </div>
+                
+                <div class="gallery-item" data-category="videos">
+                    <video src="./videos/Video feliz navidad - la hueca.mp4" controls></video>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Juan Diego - Diseñador Digital. Todos los derechos reservados.</p>
+        <p>📱 <a href="https://wa.me/573172709065" style="color: #3498db;">+57 317 270 9065</a></p>
+    </footer>
+
+    <!-- Modal para imágenes -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
